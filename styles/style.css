@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primaria: #f6f6f6;
+    --color-secundaria: #000000;
+    --color-terciaria:  #1d6f9e ;
+    --color-hover: #adfff5;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+}
+
+.header{
+    display: flex;
+    padding: 20px 0% 0% 84px;
+}
+
+.Caja {
+
+    padding: 10%;
+    border: 2px solid #F6F6F6;
+    border-radius: 5px;
+    text-align: left; 
+    
+}
+.presentacion {
+    padding: 5% 8%;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.presentacion-dos{
+    
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; 
+    border: 2px solid var(--color-terciaria);
+    background-color: #ffffff; 
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5ren;
+    color: #333; 
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    align-items: center;
+    margin-top: -120px;
+    position: relative;
+    
+}
+.correccion{
+    display: block;
+}
+
+.advertencia-2{
+    width:450px;
+    height: 5px;
+    margin: 1px;
+    padding: 2%;
+    font-family: var(--fuente-montserrat);
+    font-size: 12px;
+    text-align:justify;
+    display:none;
+}
+.botones{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.Encriptar{
+    
+    cursor: pointer;
+    border: 2px solid var(--color-terciaria);
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    text-align: center;
+
+}
+
+.Encriptar:hover{
+    background-color: var(--color-hover);
+}
+
+.Desencriptar{
+
+    text-align: center;
+    border: 2px solid var(--color-terciaria);
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+}
+
+.Desencriptar:hover{
+    background-color: var(--color-hover);
+}
+
+.Copiar{
+    
+    text-align: center;
+    border: 2px solid var(--color-terciaria);
+    width: 30%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 0;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+    margin-top: 450px;
+    position: absolute;
+   
+}
+
+.Copiar:focus{
+    background-color: var(--color-hover);
+    outline: none;
+}
+
+.parrafo{
+    width: 240px;
+    height: 400px;
+    margin: 1px;
+    padding: 20px;
+
+    background-color: #ffffff; 
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5ren;
+    color: #333; 
+    text-align:justify;
+    display: none;
+}
+
+.presentacion__imagen{
+    width: 90%;
+
+}
+
+.footer{
+    color:var(--color-primaria);
+    background-color: var(--color-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+         padding: 10%;  
+         padding: 10% 0% 0% 15%;
+    }
+    
+    .presentacion{
+        flex-direction: column;
+        padding: 5%;
+        display: flex;
+        align-items:start;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        
+
+    }
+
+    .presentacion__contenido{    
+    
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Encriptar{
+    
+        cursor: pointer;
+        border: 2px solid var(--color-terciaria);
+        width: 120px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 11.5px 0;
+        text-decoration: none;
+        color: var(--color-secundaria);
+        font-family: var(--fuente-montserrat);
+        text-align: center;
+    
+    }
+
+    .Desencriptar{
+
+        text-align: center;
+        border: 2px solid var(--color-terciaria);
+        width: 120px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        padding: 11.5px 0;
+        text-decoration: none;
+        color: var(--color-secundaria);
+        font-family: var(--fuente-montserrat);
+    }
+    .presentacion-tres{
+        width: auto;
+        height: 18px;
+        
+    }
+
+    .advertencia-2{
+        width:auto;
+        height: auto;
+        margin: auto;
+        padding: 2%;
+        font-family: var(--fuente-montserrat);
+        font-size: 10px;
+        text-align:center;
+        
+    }
+    .presentacion-dos{
+        width: auto;
+        height: 180px;
+        margin-top: 1%;
+    }
+    .presentacion__imagen{
+        margin-top: 1%;
+        height: 600%;
+        width: 40%;
+        align-items: center;
+       
+    }
+    .mensaje{
+        width: auto;
+        height: auto;
+        font-size: 15px;
+
+    }
+
+    .Copiar{
+    
+        text-align: center;
+        border: 2px solid var(--color-terciaria);
+        width: 30%;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 12px 0;
+        text-decoration: none;
+        color: var(--color-secundaria);
+        font-family: var(--fuente-montserrat);
+        margin-top: 210px;
+        position: absolute;
+       
+    }
+    .footer{
+        padding: 24px;
+        text-align: center;
+        font-family: var(--fuente-krona);
+        font-size: 0.5rem;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+    
+}

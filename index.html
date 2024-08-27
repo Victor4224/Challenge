@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Vector.png" alt="Logo de alura latam">
+    </header>
+    <main class="presentacion">
+
+        <section class="presentacion__contenido">
+
+            <textarea class="Caja" id="textoUsuario" placeholder="Ingrese el texto por favor"  rows="10" cols="30" style="resize:none; box-sizing:border-box;"></textarea>  
+            
+            <div class="correccion-principal">
+                <img class="correccion" src="./assets/Vector-2.png" alt="mensaje de advertencia acerca del uso de letras minusculas y sin acentos">
+                <p class="advertencia-2"></p>
+            </div>
+
+            <div class="botones">
+                <a onclick="encriptarTexto();" class="Encriptar">Encriptar</a>
+                <a onclick="descencriptarTexto();" class="Desencriptar">Desencriptar</a>
+            </div>    
+            
+        </section>
+        <section class="presentacion-dos">
+            <div class="presentacion-tres">
+                <img class="presentacion__imagen" src="./assets/Muñeco.png" alt="Foto de Ana García desarrolando un proyecto">
+                <p class="mensaje"> Mensaje no fue encontrado</p>
+                <p class="mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <!-- falta acomodar bien los mensajes-->
+            </div>
+
+            <textarea class ="parrafo" readonly></textarea>
+            <a  onclick="copiarTexto()"; class="Copiar">Copiar</a>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Victor Manuel Arias Ruiz / 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
